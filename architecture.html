@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture - AWS Cloud Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Navigation Bar -->
+    <nav>
+        <div class="logo">AWS Cloud Project</div>
+        <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">AWS Services</a></li>
+            <li><a href="architecture.html" class="active">Architecture</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="language.html">Contact</a></li>
+            <!-- CTA Nav Button -->
+            
+        </ul>
+    </nav>
+
+    <!-- Page Hero Section -->
+    <section class="hero">
+        <h1>AWS Project Architecture</h1>
+        <p>Static Website Hosting using Amazon S3 & GitHub Workflow</p>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Card 1: Diagram -->
+        <section class="card">
+            <h2>Architecture Diagram</h2>
+            <pre>
+VS Code
+   │
+   ▼
+GitHub Repository
+   │
+   ▼
+Amazon S3 Bucket
+   │
+   ▼
+Static Website Hosting
+   │
+   ▼
+Live Website</pre>
+            <!-- Card Buttons -->
+            <div class="card-actions">
+                <a href="https://github.com" target="_blank" class="btn btn-secondary"><span>🐙</span> View Repository</a>
+                <a href="#" class="btn btn-primary">Launch Live Site <span>&rarr;</span></a>
+            </div>
+        </section>
+
+        <!-- Card 2: Explanation -->
+        <section class="card">
+            <h2>Architecture Explanation</h2>
+            <p>1. Website files are developed using HTML and CSS in VS Code.</p>
+            <p>2. The source code is uploaded to GitHub for version control.</p>
+            <p>3. The website files are uploaded to an Amazon S3 bucket.</p>
+            <p>4. Static Website Hosting is enabled in Amazon S3.</p>
+            <p>5. The website becomes publicly accessible through the S3 Website Endpoint.</p>
+        </section>
+
+        <!-- Card 3: Flow -->
+        <section class="card">
+            <h2>Project Flow</h2>
+            <ul>
+                <li>Develop Website</li>
+                <li>Upload Files to GitHub</li>
+                <li>Create Amazon S3 Bucket</li>
+                <li>Upload Website Files</li>
+                <li>Enable Static Website Hosting</li>
+                <li>Configure Bucket Policy</li>
+                <li>Access Live Website</li>
+            </ul>
+            <!-- Card Buttons -->
+            <div class="card-actions">
+                <a href="services.html" class="btn btn-primary">Explore AWS Services <span>&rarr;</span></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page Footer -->
+    <footer>
+        <h3>Developed by Ravva Swapna</h3>
+        <p>AWS Cloud Mini Project | 2026</p>
+    </footer>
+
+</body>
+</html>

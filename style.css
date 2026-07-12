@@ -1,0 +1,420 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(-45deg,#0f172a,#1e3a8a,#2563eb,#06b6d4);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+    color:#fff;
+}
+
+/* Animated Background */
+
+@keyframes bgMove{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 60px;
+
+position:fixed;
+
+width:100%;
+
+top:0;
+
+z-index:999;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 8px 30px rgba(0,0,0,.2);
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:700;
+
+color:#fff;
+
+letter-spacing:1px;
+
+}
+
+.navbar ul{
+
+display:flex;
+
+list-style:none;
+
+}
+
+.navbar ul li{
+
+margin-left:20px;
+
+}
+
+.navbar ul li a{
+
+text-decoration:none;
+
+color:white;
+
+padding:12px 18px;
+
+border-radius:30px;
+
+transition:.4s;
+
+font-weight:600;
+
+}
+
+.navbar ul li a:hover{
+
+background:#38bdf8;
+
+transform:translateY(-3px);
+
+box-shadow:0 0 20px #38bdf8;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+text-shadow:3px 3px 15px black;
+
+animation:fadeDown 1s;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+max-width:700px;
+
+line-height:35px;
+
+margin-bottom:40px;
+
+animation:fadeUp 1.2s;
+
+}
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+margin:10px;
+
+background:linear-gradient(90deg,#00d4ff,#2563eb);
+
+border-radius:40px;
+
+color:white;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.4s;
+
+box-shadow:0 0 20px rgba(0,212,255,.5);
+
+}
+
+.btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 35px cyan;
+
+}
+
+/* ================= SECTION ================= */
+
+section{
+
+padding:80px 8%;
+
+}
+
+h2{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:40px;
+
+}
+
+/* ================= CARDS ================= */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+padding:30px;
+
+text-align:center;
+
+transition:.5s;
+
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+font-size:25px;
+
+}
+
+.card p{
+
+line-height:28px;
+
+}
+
+/* ================= CONTACT FORM ================= */
+
+form{
+
+max-width:650px;
+
+margin:auto;
+
+}
+
+input,textarea{
+
+width:100%;
+
+padding:15px;
+
+margin:12px 0;
+
+border:none;
+
+outline:none;
+
+border-radius:12px;
+
+background:rgba(255,255,255,.2);
+
+color:white;
+
+}
+
+input::placeholder,
+
+textarea::placeholder{
+
+color:#eee;
+
+}
+
+input[type="submit"]{
+
+background:#06b6d4;
+
+cursor:pointer;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+input[type="submit"]:hover{
+
+background:#0284c7;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+background:rgba(0,0,0,.3);
+
+text-align:center;
+
+padding:30px;
+
+margin-top:40px;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-direction:column;
+
+padding:15px;
+
+}
+
+.navbar ul{
+
+flex-direction:column;
+
+margin-top:15px;
+
+}
+
+.navbar ul li{
+
+margin:8px 0;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+
+
+
+
+
+
+}
+
+
+
+}
+
